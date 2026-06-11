@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Form SIPASAN">
+  <meta name="theme-color" content="#1a5276">
+  <title>Form Inspeksi SIPASAN</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(160deg, #1a5276 0%, #148f77 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 20px 40px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 16px;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .title {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      color: rgba(255,255,255,0.75);
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    .section-label {
+      color: rgba(255,255,255,0.6);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    .cards {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.97);
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      transition: transform 0.15s, box-shadow 0.15s;
+      cursor: pointer;
+      border: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .card:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .icon-tpp    { background: #eaf4fb; }
+    .icon-dam    { background: #e8f8f5; }
+    .icon-hydrant{ background: #fef9e7; }
+    .icon-extra  { background: #f9ebea; }
+
+    .card-text { flex: 1; }
+
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a252f;
+      margin-bottom: 2px;
+      line-height: 1.3;
+    }
+
+    .card-desc {
+      font-size: 12px;
+      color: #7f8c8d;
+    }
+
+    .card-arrow {
+      color: #bdc3c7;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .footer {
+      color: rgba(255,255,255,0.45);
+      font-size: 11px;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .divider {
+      width: 100%;
+      max-width: 400px;
+      height: 1px;
+      background: rgba(255,255,255,0.15);
+      margin: 8px 0 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">🏥</div>
+    <div class="title">Form Inspeksi SIPASAN</div>
+    <div class="subtitle">BKK Kelas I Padang — Timker 3</div>
+  </div>
+
+  <div class="section-label">Formulir Digital IKL</div>
+
+  <div class="cards">
+
+    <a class="card" href="https://ee-eu.kobotoolbox.org/x/QuvzjrYe" target="_blank">
+      <div class="card-icon icon-tpp">🍽️</div>
+      <div class="card-text">
+        <div class="card-title">Tempat Pengolahan Pangan (TPP)</div>
+        <div class="card-desc">Inspeksi higiene sanitasi TPP</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+
+    <a class="card" href="https://ee-eu.kobotoolbox.org/x/z0UfcjAa" target="_blank">
+      <div class="card-icon icon-dam">💧</div>
+      <div class="card-text">
+        <div class="card-title">Depot Air Minum (DAM)</div>
+        <div class="card-desc">Inspeksi higiene sanitasi DAM</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+
+    <a class="card" href="https://ee-eu.kobotoolbox.org/x/pg7tA5o5" target="_blank">
+      <div class="card-icon icon-hydrant">🚒</div>
+      <div class="card-text">
+        <div class="card-title">Hydrant dan Reservoar</div>
+        <div class="card-desc">Inspeksi higiene sanitasi hydrant</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+
+    <!-- Tambah form ke-4 di sini kalau ada -->
+    <!-- 
+    <a class="card" href="GANTI_LINK_FORM_4" target="_blank">
+      <div class="card-icon icon-extra">🏫</div>
+      <div class="card-text">
+        <div class="card-title">Nama Form Ke-4</div>
+        <div class="card-desc">Deskripsi singkat</div>
+      </div>
+      <div class="card-arrow">›</div>
+    </a>
+    -->
+
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer">
+    Klik kartu untuk membuka formulir inspeksi<br>
+    Pastikan koneksi internet aktif sebelum mengisi
+  </div>
+
+</body>
+</html>
