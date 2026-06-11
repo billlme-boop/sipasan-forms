@@ -1,0 +1,9 @@
+{
+  "name": "SIPASAN",
+  "short_name": "SIPASAN",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1a5276",
+  "theme_color": "#1a5276",
+  "icons": []
+}
